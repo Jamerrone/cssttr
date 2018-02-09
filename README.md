@@ -4,6 +4,8 @@ Na drie keer te hebben herstart met dit project, ben ik eindelijk blij met wat i
 
 Ik heb nog niet alle componenten kunnen verwerken maar ik heb heel veel tijd en aandacht aan details besteed. Dit betekend dat wat ik nu heb, naar mijn mening ook pleasurable is. Met gebruik van leuke interacties, animaties en stijl heb ik dit kunnen bereiken.
 
+*https://jamerrone.github.io/cssttr/*
+
 **De ervaring is momenteel voor Google Chrome gebouwd.**
 
 | Gedaan        | Te Doen                |
