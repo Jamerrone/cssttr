@@ -225,7 +225,7 @@ main img {
   object-fit: cover;
 }
 
-main figure {
+main dialog {
   position: fixed;
   z-index: 9999;
   top: -100%;
@@ -233,17 +233,18 @@ main figure {
   display: none;
   width: 50rem;
   margin-left: -25rem;
+  border: none;
   border-radius: .25rem;
   background: #fff;
   box-shadow: 0 0 0 50vmax rgba(0, 0, 0, .8);
 }
 
-main figure:target {
+main dialog:target {
   top: 5%;
   display: block;
 }
 
-main figure h2 {
+main dialog h2 {
   font-size: 1rem;
   padding: 1rem 0;
   text-align: center;
@@ -252,7 +253,7 @@ main figure h2 {
   color: var(--dark-blue);
 }
 
-main figure a {
+main dialog a {
   font-size: 2rem;
   font-weight: bold;
   position: absolute;
@@ -261,7 +262,7 @@ main figure a {
   transition: var(--transition);
 }
 
-main figure a:before {
+main dialog a:before {
   font-size: 1rem;
   font-weight: normal;
   position: absolute;
@@ -274,48 +275,48 @@ main figure a:before {
   opacity: 0;
 }
 
-main figure a:focus:before {
+main dialog a:focus:before {
   visibility: visible;
   opacity: 1;
 }
 
-main figure a:focus {
+main dialog a:focus {
   transform: rotate(90deg);
 }
 
-main figure a:focus,
-main figure a:hover {
+main dialog a:focus,
+main dialog a:hover {
   text-decoration: underline;
 }
 
-main figure img {
+main dialog img {
   height: auto;
   max-height: none;
   margin: 0;
   border-radius: 0;
 }
 
-main figure fieldset {
+main dialog fieldset {
   margin-bottom: 1rem;
   text-align: center;
   border: none;
 }
 
-main figure input,
-main figure label {
+main dialog input,
+main dialog label {
   display: inline-block;
   cursor: pointer;
 }
 
-main figure input {
+main dialog input {
   position: absolute;
   z-index: -1;
   display: inline;
   opacity: 0;
 }
 
-main figure input:hover+label>svg,
-main figure input:focus+label>svg {
+main dialog input:hover+label>svg,
+main dialog input:focus+label>svg {
   transform: scale(1.15);
   animation: pulseAnimation 2s infinite;
   border: 1px solid transparent;
@@ -323,18 +324,18 @@ main figure input:focus+label>svg {
   filter: grayscale(0);
 }
 
-main figure legend {
+main dialog legend {
   font-weight: bold;
   padding: 1rem 0;
   text-align: center;
 }
 
-main figure label {
+main dialog label {
   font-size: 0;
   margin: 0 .5rem;
 }
 
-main figure svg {
+main dialog svg {
   height: 44px;
   transition: var(--transition);
   border-radius: 50%;
@@ -364,3 +365,5 @@ main figure svg {
     box-shadow: 0 0 0 0 rgba(132, 250, 176, 0);
   }
 }
+
+/*# sourceMappingURL=main.css.map */
