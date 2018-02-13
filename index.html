@@ -15,15 +15,15 @@
     <ul>
       <li><a href="#main-content" aria-label="Home, current page">Home</a></li>
       <li>
-          <a href="/products">Products</a>
+          <a href="#">Products</a>
           <ul>
-            <li><a href="/products/rock">Small Poster</a></li>
-            <li><a href="/products/paper">Normal Poster</a></li>
-            <li><a href="/products/scissors">Large Poster</a></li>
+            <li><a href="#">Small Poster</a></li>
+            <li><a href="#">Normal Poster</a></li>
+            <li><a href="#">Large Poster</a></li>
           </ul>
       </li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#login">Login</a></li>
     </ul>
   </nav>
   <main id="main-content">
@@ -236,8 +236,74 @@
           </fieldset>
         </form>
       </dialog>
-    </article>
+    </article>    
   </main>
+  <section>
+    <a href="https://vasilis.nl/">
+      <article>
+        <h1>Girls Of Reality</h1>
+        <figure>
+          <img src="images/banner1.jpg" alt="A drawing of a colorful monster on a newspaper" />
+          <figcaption>
+            <p>
+              There's also this big and in depth description of the picture. You often see this on newssites or photo blogs. You could also replace the photo with a video if needed.
+            </p>
+            <footer>
+              <time datetime="2017-02-06">6-2-2017</time> © 2017 Vasilis van Gemert
+            </footer>
+          </figcaption>
+        </figure>
+      </article>
+    </a>
+    <a href="https://vasilis.nl/">
+      <article>
+        <h1>Shelter At Technology</h1>
+        <figure>
+          <img src="images/banner2.jpg" alt="A drawing of a colorful monster on a newspaper" />
+          <figcaption>
+            <p>
+              There's also this big and in depth description of the picture. You often see this on newssites or photo blogs. You could also replace the photo with a video if needed.
+            </p>
+            <footer>
+              <time datetime="2017-02-06">6-2-2017</time> © 2017 Vasilis van Gemert
+            </footer>
+          </figcaption>
+        </figure>
+      </article>
+    </a>
+  </section>
+  <a href="#chat"><img src="images/chat-icon.png"></a>
+  <aside id="chat">
+    <a href="#">&#215;</a>
+    <ol>
+      <li>
+        <p>Hey!</p>
+        <footer>
+          <p>Posted on <time datatime="2015-01-22T10:25">10:25 AM</time> by you</p>
+          <p data-status="READ">Has been read</p>
+        </footer>
+      </li>
+      <li>
+        <p>Hey! Sorry I was busy</p>
+        <footer>
+          <p>Posted on <time datatime="2017-02-03T14:19">2:19 PM</time> by John</p>
+        </footer>
+      </li>
+      <li>
+        <p>I sent that 2 years ago</p>
+        <footer>
+          <p>Posted on <time datatime="2017-02-03T14:22">2:22 PM</time> by you</p>
+          <p data-status="DELIVERED">Has been delivered</p>
+        </footer>
+      </li>
+    </ol>
+    
+    <form action="#" method="post">
+      <label for="field-message">Message</label>
+      <textarea name="field-message" rows="1" placeholder="Message..." id="field-message"></textarea>
+      <button type="submit">Send It!</button>
+    </form>
+  </aside>
 </body>
 
 </html>
