@@ -9,7 +9,7 @@ Ik heb nog niet alle componenten kunnen verwerken maar ik heb heel veel tijd en 
 **De ervaring is momenteel voor Google Chrome gebouwd.**
 
 | Gedaan                 | Te Doen        |
-| ---------------------- |:--------------:|
+| :--------------------: |:--------------:|
 | Navigatie              | Step Indicator |
 | Media Item             | Media Queries  |
 | Rating                 |                |
