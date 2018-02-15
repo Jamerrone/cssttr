@@ -36,7 +36,7 @@ head.preload + body * {
 
 head.preload + body main article:after {
   animation: loaderAnimation 1s infinite steps(8);
-  background: url(../images/spinner.png) 0 0;
+  background: url(images/spinner.png) 0 0;
   background-size: cover;
   content: "Loading...";
   display: block;
