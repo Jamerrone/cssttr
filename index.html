@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head class="preload">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Poster Shop</title>
@@ -23,7 +23,27 @@
           </ul>
       </li>
       <li><a href="#">Contact</a></li>
-      <li><a href="#login">Login</a></li>
+      <li>
+        <a href="#login">Login</a>
+        <ul>
+          <li>
+              <form action="#" method="post">
+                <label for="field-email">Email</label>
+                <input placeholder="example@domain.com" type="email" id="field-email" name="field-email" autocomplete="email" required>
+
+                <label for="field-password">Password</label>
+                <input placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" type="password" id="field-password" name="field-password" required>
+
+                <input type="checkbox" id="field-stay-logged-in" name="field-stay-logged-in" value="stay-logged-in">
+                <label for="field-stay-logged-in">Stay logged in</label>
+
+                <a href="#">Forgot password</a>
+
+                <button type="submit">Login</button>
+            </form>            
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <main id="main-content">
@@ -304,6 +324,10 @@
       <button type="submit">Send It!</button>
     </form>
   </aside>
+  <footer>
+    <small>&copy; 2018 - James Peter Perrone Jefferies | Coded with ☕ & 💕</small>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
