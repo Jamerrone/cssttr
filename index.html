@@ -10,7 +10,7 @@
 
 <body>
   <h1>Poster Shop</h1>
-  <nav>
+  <nav id="outline-navigation">
     <h1>Main navigation</h1>
     <ul>
       <li><a href="#main-content" aria-label="Home, current page">Home</a></li>
@@ -23,8 +23,8 @@
           </ul>
       </li>
       <li><a href="#">Contact</a></li>
-      <li>
-        <a href="#login">Login</a>
+      <li id="outline-login">
+        <a href="#">Login</a>
         <ul>
           <li>
               <form action="#" method="post">
@@ -46,7 +46,7 @@
       </li>
     </ul>
   </nav>
-  <main id="main-content">
+  <main id="outline-media">
     <article>
       <a href="#modal-1"><h1>Web Green</h1></a>
       <img src="images/1.png" alt="A colorful crayon drawing on the hood of a car." />
@@ -258,7 +258,7 @@
       </dialog>
     </article>    
   </main>
-  <section>
+  <section id="outline-picture">
     <a href="https://vasilis.nl/">
       <article>
         <h1>Girls Of Reality</h1>
@@ -292,7 +292,7 @@
       </article>
     </a>
   </section>
-  <a href="#chat"><img src="images/chat-icon.png"></a>
+  <a href="#chat" id="outline-chat"><img src="images/chat-icon.png"></a>
   <aside id="chat">
     <a href="#">&#215;</a>
     <ol>
@@ -325,6 +325,19 @@
     </form>
   </aside>
   <footer>
+    <nav>
+      <h1>Finish your order</h1>
+      <progress value="1" max="1">25%</progress>
+      <ol id="outline-step">
+        <li><a href="#outline-chat">Chat</a></li>
+        <li><a href="#outline-login">Login</a></li>
+        <li><a href="#outline-media">Media Item</a></li>
+        <li><a href="#outline-navigation">Navigatie</a></li>
+        <li><a href="#outline-picture">Picture with Subtitle</a></li>
+        <li><a href="#outline-media">Rating</a></li>
+        <li><a href="#outline-step" aria-label="current step">Step Indicator</a></li>
+      </ol>
+    </nav>
     <small>&copy; 2018 - James Peter Perrone Jefferies | Coded with ☕ & 💕</small>
   </footer>
   <script src="script.js"></script>

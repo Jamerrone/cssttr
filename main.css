@@ -30,6 +30,10 @@
   outline: none;
 }
 
+*[id^="outline"]:target {
+  border: 0.1rem solid red !important;
+}
+
 head.preload + body * {
   transition: none !important;
 }
@@ -75,8 +79,39 @@ body > h1 {
 
 body > footer {
   letter-spacing: 0.1rem;
-  padding: 0.5rem;
   text-align: center;
+}
+
+body > footer nav {
+  background-color: transparent;
+  position: static;
+}
+
+body > footer li {
+  display: inline-block;
+  margin: 1rem 0.75rem 0;
+}
+
+body > footer progress {
+  -webkit-appearance: none;
+  border-radius: 0;
+  color: var(--dark-blue);
+  display: block;
+  height: 0.5rem;
+  width: 100%
+}
+
+body > footer progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+body > footer progress[value]::-webkit-progress-value {
+  background-image: var(--gradient);
+}
+
+body > footer small {
+  display: inline-block;
+  margin: 1rem 0;
 }
 
 h1 {
