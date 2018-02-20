@@ -854,4 +854,47 @@ aside form button:focus {
     background-position: 25rem 0;
   }
 }
+
+/* === Media Queries === */
+
+@media (max-width: 37.19rem) {
+  body > h1 {
+    position: static;
+  }
+  body > footer ol {
+    padding: 1rem 0;
+  }
+  body > footer li {
+    display: block;
+  }
+  nav {
+    position: static;
+  }
+  main {
+    padding: 3rem 1.5rem;
+    margin-top: 0;
+    display: block;
+  }
+  main article {
+    margin-bottom: 2rem;
+  }
+  main article > a:hover + img,
+  main article > a:focus + img {
+    transform: scale(1);
+  }
+  section {
+    flex-direction: column;
+  }
+  section a {
+    width: 100%;
+  }
+  section a:hover,
+    section a:focus {
+    width: 100%;
+  }
+  section img {
+    height: 100vh;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
