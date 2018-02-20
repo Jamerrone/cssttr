@@ -1007,12 +1007,19 @@ aside form button:focus {
 }
 
 @keyframes headerColorAnimation {
-  0% {
+  0%,
+  40% {
     color: #fff;
   }
 
-  100% {
+  40%,
+  60% {
     color: #212121;
+  }
+
+  60%,
+  100% {
+    color: #fff;
   }
 }
 /*# sourceMappingURL=main.css.map */
