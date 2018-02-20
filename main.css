@@ -34,6 +34,10 @@
   border: 0.1rem solid red !important;
 }
 
+::placeholder {
+  color: #424242;
+}
+
 head.preload + body * {
   transition: none !important;
 }
@@ -174,7 +178,8 @@ nav {
 
 @media (max-width: 37.19rem) {
   nav {
-    position: static;
+    position: relative;
+    top: 0;
   }
 }
 
@@ -232,6 +237,12 @@ nav ul ul form a {
   min-width: 11rem;
   padding: 0;
   text-align: right;
+}
+
+@media (max-width: 37.19rem) {
+  nav ul ul form a {
+    min-width: auto;
+  }
 }
 
 nav ul > li {
@@ -604,7 +615,7 @@ section {
 }
 
 @media (max-width: 37.19rem) {
-section {
+  section {
     flex-direction: column;
   }
 }
