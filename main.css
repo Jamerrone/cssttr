@@ -19,8 +19,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ head.preload + body * {
   transition: none !important;
 }
 
-head.preload + body main article:after {
+head.preload + body main article::after {
   animation: loaderAnimation 1s infinite steps(8);
   background: url(./images/spinner.png) 0 0;
   background-size: cover;
@@ -77,6 +77,12 @@ body > h1 {
   z-index: 999;
 }
 
+@media (max-width: 37.19rem) {
+  body > h1 {
+    position: static;
+  }
+}
+
 h1 {
   font-size: 1rem;
   letter-spacing: 0.25rem;
@@ -106,9 +112,21 @@ body > footer nav {
   position: static;
 }
 
+@media (max-width: 37.19rem) {
+  body > footer ol {
+    padding: 1rem 0;
+  }
+}
+
 body > footer li {
   display: inline-block;
   margin: 1rem 0.75rem 0;
+}
+
+@media (max-width: 37.19rem) {
+  body > footer li {
+    display: block;
+  }
 }
 
 body > footer a:hover,
@@ -122,7 +140,7 @@ body > footer progress {
   color: var(--dark-blue);
   display: block;
   height: 0.5rem;
-  width: 100%
+  width: 100%;
 }
 
 body > footer progress[value]::-webkit-progress-bar {
@@ -138,6 +156,12 @@ body > footer small {
   margin: 1rem 0;
 }
 
+@media (max-width: 37.19rem) {
+  body > footer small {
+    width: 90%;
+  }
+}
+
 /* === NAVIGATION & LOGIN === */
 
 nav {
@@ -146,6 +170,12 @@ nav {
   top: 5.5rem;
   width: 100%;
   z-index: 999;
+}
+
+@media (max-width: 37.19rem) {
+  nav {
+    position: static;
+  }
 }
 
 nav h1 {
@@ -208,6 +238,12 @@ nav ul > li {
   display: inline-block;
 }
 
+@media (max-width: 60rem) {
+  nav ul > li:last-of-type ul {
+    right: 0;
+  }
+}
+
 nav ul a {
   color: inherit;
   display: block;
@@ -232,12 +268,12 @@ nav ul a:focus + ul {
   z-index: 1;
 }
 
-nav ul a:hover:not(:only-child):after,
-nav ul a:focus:not(:only-child):after {
+nav ul a:hover:not(:only-child)::after,
+nav ul a:focus:not(:only-child)::after {
   border-top-color: var(--ultra-light-blue);
 }
 
-nav ul a:not(:only-child):after {
+nav ul a:not(:only-child)::after {
   border: 0.3rem solid transparent;
   border-top: 0.3rem solid var(--dark-blue);
   content: '';
@@ -252,6 +288,13 @@ nav ul form {
   padding: 1rem;
 }
 
+@media (max-width: 37.19rem) {
+  nav ul form {
+    max-width: 80vw;
+    min-width: auto;
+  }
+}
+
 nav ul form label {
   cursor: pointer;
 }
@@ -263,7 +306,7 @@ nav ul form a:focus {
   text-decoration: underline;
 }
 
-nav ul form a:not(:only-child):after {
+nav ul form a:not(:only-child)::after {
   border: none;
   content: '';
   display: none;
@@ -354,12 +397,26 @@ main {
   padding: 3rem 6rem;
 }
 
+@media (max-width: 37.19rem) {
+  main {
+    display: block;
+    margin-top: 0;
+    padding: 3rem 1.5rem;
+  }
+}
+
 main article {
   position: relative;
 }
 
+@media (max-width: 37.19rem) {
+  main article {
+    margin-bottom: 3rem;
+  }
+}
+
 main h1 {
-  background-image: linear-gradient(120deg, var(--light-green), var(--light-blue));
+  background-image: var(--gradient);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 0;
@@ -383,12 +440,19 @@ main article > a:focus + img {
   transform: scale(1.1);
 }
 
+@media (max-width: 37.19rem) {
+  main article > a:hover + img,
+  main article > a:focus + img {
+    transform: scale(1);
+  }
+}
+
 main article > a:hover h1,
 main article > a:focus h1 {
   background-size: 100% 100%;
 }
 
-main article > a:before {
+main article > a::before {
   content: "";
   height: 100%;
   position: absolute;
@@ -420,6 +484,14 @@ main dialog {
   z-index: 9999;
 }
 
+@media (max-width: 37.19rem) {
+  main dialog {
+    left: 5%;
+    margin: 0;
+    width: 90%;
+  }
+}
+
 main dialog:target {
   display: block;
   top: 5%;
@@ -444,7 +516,7 @@ main dialog a {
   transition: var(--transition);
 }
 
-main dialog a:before {
+main dialog a::before {
   content: "Close";
   display: inline;
   font-size: 1rem;
@@ -457,7 +529,7 @@ main dialog a:before {
   visibility: hidden;
 }
 
-main dialog a:focus:before {
+main dialog a:focus::before {
   opacity: 1;
   visibility: visible;
 }
@@ -500,7 +572,7 @@ main dialog input {
 main dialog input:hover + label > svg,
 main dialog input:focus + label > svg {
   animation: pulseAnimation 2s ease-in-out infinite;
-  background-image: linear-gradient(120deg, var(--light-green), var(--light-blue));
+  background-image: var(--gradient);
   border: 0.0625rem solid transparent;
   filter: grayscale(0);
   transform: scale(1.15);
@@ -531,6 +603,12 @@ section {
   display: flex;
 }
 
+@media (max-width: 37.19rem) {
+section {
+    flex-direction: column;
+  }
+}
+
 section a {
   display: block;
   position: relative;
@@ -539,9 +617,22 @@ section a {
   width: 50vw;
 }
 
+@media (max-width: 37.19rem) {
+  section a {
+    width: 100%;
+  }
+}
+
 section a:hover,
 section a:focus {
   width: 150vw;
+}
+
+@media (max-width: 37.19rem) {
+  section a:hover,
+  section a:focus {
+    width: 100%;
+  }
 }
 
 section a:hover img,
@@ -553,6 +644,13 @@ section a:hover h1,
 section a:focus h1 {
   background-color: transparent;
   top: 25%;
+}
+
+@media (max-width: 37.19rem) {
+  section a:hover h1,
+  section a:focus h1 {
+    top: 15%;
+  }
 }
 
 section a:hover p,
@@ -576,6 +674,13 @@ section img {
   object-fit: cover;
   transition: all 0.35s ease-in-out;
   width: 100%;
+}
+
+@media (max-width: 37.19rem) {
+  section img {
+    filter: grayscale(50%) brightness(40%);
+    height: 70vh;
+  }
 }
 
 section h1,
@@ -603,11 +708,26 @@ section h1 {
   transform: translateY(-50%);
 }
 
+@media (max-width: 37.19rem) {
+  section h1 {
+    background-color: transparent;
+    top: 15%;
+  }
+}
+
 section p,
 section footer {
   opacity: 0;
   padding: 0 20%;
   visibility: hidden;
+}
+
+@media (max-width: 37.19rem) {
+  section p,
+  section footer {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 section p {
@@ -616,10 +736,23 @@ section p {
   transition-delay: 0;
 }
 
+@media (max-width: 37.19rem) {
+  section p {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 section footer {
   bottom: 25%;
   font-style: italic;
   transition-delay: 0;
+}
+
+@media (max-width: 37.19rem) {
+  section footer {
+    bottom: 15%;
+  }
 }
 
 /* === CHAT === */
@@ -644,7 +777,7 @@ a[href="#chat"]:focus {
   background-size: 400% 400%;
 }
 
-a[href="#chat"]:after {
+a[href="#chat"]::after {
   background-color: red;
   border-radius: 50%;
   box-shadow: var(--box-shadow);
@@ -701,7 +834,7 @@ aside a {
   width: 100%;
 }
 
-aside a:before {
+aside a::before {
   content: "Close";
   display: inline;
   font-size: 1rem;
@@ -712,7 +845,7 @@ aside a:before {
   transition: var(--transition);
 }
 
-aside a:focus:before {
+aside a:focus::before {
   opacity: 1;
   visibility: visible;
 }
@@ -854,47 +987,4 @@ aside form button:focus {
     background-position: 25rem 0;
   }
 }
-
-/* === Media Queries === */
-
-@media (max-width: 37.19rem) {
-  body > h1 {
-    position: static;
-  }
-  body > footer ol {
-    padding: 1rem 0;
-  }
-  body > footer li {
-    display: block;
-  }
-  nav {
-    position: static;
-  }
-  main {
-    padding: 3rem 1.5rem;
-    margin-top: 0;
-    display: block;
-  }
-  main article {
-    margin-bottom: 2rem;
-  }
-  main article > a:hover + img,
-  main article > a:focus + img {
-    transform: scale(1);
-  }
-  section {
-    flex-direction: column;
-  }
-  section a {
-    width: 100%;
-  }
-  section a:hover,
-    section a:focus {
-    width: 100%;
-  }
-  section img {
-    height: 100vh;
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
