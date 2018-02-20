@@ -64,10 +64,11 @@ body {
   color: var(--dark-blue);
   font-family: 'Ampersand', 'Brandon Grotesque', -apple-system, sans-serif;
   line-height: 1.6rem;
+  filter: negative(50%);
 }
 
 body > h1 {
-  animation: backgroundAnimation 30s ease infinite;
+  animation: backgroundAnimation 30s ease infinite, headerColorAnimation 30s ease infinite;
   background-image: var(--gradient);
   background-size: 400% 400%;
   color: var(--ultra-light-blue);
@@ -1002,6 +1003,16 @@ aside form button:focus {
 @keyframes loaderAnimation {
   to {
     background-position: 25rem 0;
+  }
+}
+
+@keyframes headerColorAnimation {
+  0% {
+    color: #fff;
+  }
+
+  100% {
+    color: #212121;
   }
 }
 /*# sourceMappingURL=main.css.map */
