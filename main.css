@@ -68,14 +68,15 @@ body {
 }
 
 body > h1 {
-  animation: backgroundAnimation 30s ease infinite, headerColorAnimation 30s ease infinite;
-  background-image: var(--gradient);
+  animation: backgroundAnimation 30s ease infinite;
+  background-image: linear-gradient(270deg, #6be6ba, var(--blue));
   background-size: 400% 400%;
-  color: var(--ultra-light-blue);
+  color: #ffffff;
   letter-spacing: 0.25rem;
   padding: 2rem 0;
   position: fixed;
   text-align: center;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
   text-transform: uppercase;
   top: 0;
   width: 100%;
@@ -1003,23 +1004,6 @@ aside form button:focus {
 @keyframes loaderAnimation {
   to {
     background-position: 25rem 0;
-  }
-}
-
-@keyframes headerColorAnimation {
-  0%,
-  40% {
-    color: #fff;
-  }
-
-  40%,
-  60% {
-    color: #212121;
-  }
-
-  60%,
-  100% {
-    color: #fff;
   }
 }
 /*# sourceMappingURL=main.css.map */
