@@ -1,33 +1,39 @@
-## Informatie
+# CSS to the Rescue
+**Please use Google Chrome for this demo.**</br>
+The website can be found [*here*](https://jamerrone.github.io/cssttr/).
 
-Na drie keer te hebben herstart met dit project, ben ik eindelijk blij met wat ik momenteel heb. Hoewel dit project heel erg hacky aanvoelt, heb ik tot nu toe veel kunnen leren. Technieken als CSS Grid, `:focus-within` en complexe selectoren als `nav ul a:hover:not(:only-child):after` kende ik nog niet. Zelf ben ik zeer onder de indruk van CSS Grid, vooral het feit dat je responsive websites kunt ontwerpen zonder media querries. Tevens vond ik het ontwerpen voor mensen die websites met hun toetsenboard besturen heel erg interesant en op de beperkingen na, voelt het best goed om zelf af en toe met deze beperking te browsen, het is namelijk heel erg relax.
+## Progress
+#### Components
+- [x] Chat
+- [x] Login
+- [x] Media Item
+- [x] Navigation
+- [x] Picture with Subtitle
+- [x] Rating
+- [x] Step Indicator
 
-Ik heb nog niet alle componenten kunnen verwerken maar ik heb heel veel tijd en aandacht aan details besteed. Dit betekend dat wat ik nu heb, naar mijn mening ook pleasurable is. Met gebruik van leuke interacties, animaties en stijl heb ik dit kunnen bereiken.
+#### [*CSS Secrets by Michailia Verou.*](http://shop.oreilly.com/product/0636920031123.do): Hacks & Tricks
+- [x] Fancy ampersands — 5.25
+- [x] De-emphasize by dimming — 6.32
+- [x] De-emphasize by blurring — 6.33
+- [x] Vertical Centering — 7.40
+- [x] Loading spinner — 8.43
+- [x] Transitions op :hovers en :focus—8.42
+- [x] Cursor—6.29
+- [x] Extending the clickable area—6.30
+- [x] Custom checkboxes—6.31
+- [x] (Pseudo)random background—2.7
+- [x] [*Form Validation*](https://codepen.io/joostf/pen/VKyPxk)
 
-*https://jamerrone.github.io/cssttr/*
+## Known Issues:
 
-**De ervaring is momenteel voor Google Chrome gebouwd.**
-
-| Gedaan                 | Te Doen       |
-| :--------------------: |:-------------:|
-| Navigatie              | Media Queries |
-| Media Item             |               |
-| Rating                 |               |
-| Login                  |               |
-| Chat                   |               |
-| Pictures with Subtitle |               |
-| Step Indicator         |               |
-
-## Known issues:
-
-### Safari
+#### Safari & Firefox Mobile
 - Strange animation bug on the smiley faces.
-### Firefox
+
+#### Firefox
 - Fieldset Legend does not center with text-align: center.
 - Radio/Label does not keep focus permanently.
-### Chrome
+- Slow/Bad Performance.
+
+#### Chrome
 - None
-
-## Credits
-
-- Rating example makes use of Emoji from: *http://emojione.com*
